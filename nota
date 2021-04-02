@@ -1,0 +1,121 @@
+
+container.. centra con margenes al máxmimo
+container-fluid.. centra con márgenes al mínimo
+GRID clase 2 
+col-   extra small <576 px
+col-sm-x  small   576<
+col-md-x  mediano 768<
+col-lg-x  largo   992<
+col-xl-x  extra largo 1200<
+Tomar que si es un tamaño para todos, basta con configurarlo en uno inferior para que sea igual el que sigue.
+align-items-(start,center,end) es para alinear verticalmente una fila
+align-self-(start,center,end) aqui ya editaría el posicimiento por columna
+justify-content-(start,center,end) alineación horizontal acomoda las columnas
+justify-content-(around,between), el primero centra las columnas dejando un margen mientras que el segundo no
+no-gutters - quita los espaciados de cada columna
+TIPOGRAFÍA
+del h1 al h5 pero tambien podemos
+<p class="h1">
+<p class="display-1 text-(center,right,left)"> es del 1 al 4 cambia la tipografía y tamaño
+<p class="text-muted"> cambia de color
+<p class="lead"> mas delgado y cambia de color
+<mark></mark> texto destacado
+<del></del texto tachado
+<ins></ins> o <u></ud> subrayado
+<small><small> pequeño
+<strong></strong> o <b></b> negrita
+<em></em> curva
+<ul class="list-inline"> la lista se pone de manera horizontal
+    <li></li>
+    <li></li
+</ul>
+text-center  centrar texto pero siempre se coloca en el padre que encierra
+<div class="bg-warning text-center py-5">
+                <p class="display-3 pt-5">Lorem, ipsum dolor.</p>
+</div>                
+COLORES
+text-primary
+bg-primary
+MARGENES Y PADDING
+Bootstrap trabaja con rem desde .25rem hasta 3rem, tomar en cuenta que 1 rem equivale a 16 px
+maximo puede ser: -5
+pt-5  se genera un paddin arriba 5 equivale a 3 rem
+pb-5   se genera un paddin abajo 5 equivale a 3 rem
+px-5  se genera un paddin izquieda y derecha 5 equivale a 3 rem
+py-5  se genera un paddin arriba y abajo 5 equivale a 3 rem
+pt-md-5  estamos indncado que solo genere el paddin en ese tamaño de pantalla
+mx-alto   se puede aplicar siempre y cuando tenga un anchura específica 
+IMAGENES
+img-fluid es para acomodar la imagen al tamaño del bloque.
+rounded redondear imagen
+COMPONENTES
+1.ALERTA
+alert-link cuando se integra con la etiqueta a 
+alert-dismissible fade show cuando mostramos y con un boton cerramos
+class="close" data-dismiss="alert" aria-label="Close"
+aria-hidden="true"
+2. Badge
+se puede integrar en un span o a para que siga en la misma fila
+se puede incluir junto a un h o un button (boton con notificacion)
+3. Breadcrumb
+Sirve para verificar en que página te encuentras, se usa en un menu
+4.Botones
+La lógica de los botones es que se coloque en lineal, si queremos que valla en la siguiente fila se coloca dentro de un div, o se lo coloca al boton como bloque
+btn-block colocar en boton en bloquw
+btn btn-outline-warning cambiar diseño de boton
+btn-lg btn-sm  cambiar tamaño de boton
+5. Grupo de Botones
+btn-group agrupar en un div
+btn-group-veritical agrupar de manera veritical
+6. Card
+Puede quitar el tamaño que viene por defecto y acoplarlo a la columna que deseas
+7. Carousel
+Tomar en cuenta que si se coloca dos carrousel en el misma página se tiene que cambiar de id
+active es para indicar la imagen que saldrá por defecto
+d-none d-md-block indica que cuando se achica desaparece el texto
+8.Collapse
+Permite mostrar o ocultar sessiones hay formas de acordeon
+9. Dropdown
+Nos sirve para realizar submenu necesita jquery  y popper
+10. Jumbotron
+Generar recuardos con estilos
+11. Group list
+Pode realizar uns listas agrupadas a gusto personalizado
+Son ventanas que se abren mediante un click se necesita jequery y popper
+12. Navbar
+navbar navbar-expand-lg  puedes indicar que cambie el menu desde el tamaño md o lg o sm
+<nav class="navbar navbar-expand-md navbar-light bg-light">
+<nav class="navbar navbar-expand-md navbar-light" style="background-color: #e3f2fd;"> puedes editar el bg
+<ul class="navbar-nav mr-auto"> está colocando a la derecha centrado
+<ul class="navbar-nav m-auto"> está colocando al centro
+form-inline sirve para que el contenido del formulario valla en lineal
+Si quiere darle margenes al menu pero manteniendo el color de fondo este es la recomendación
+<div class="container-fluid" style="background-color: #e3f2fd;">
+        <nav class="navbar navbar-expand-md navbar-light container">
+Para generar un imagen para tu logo la recomendación debería ser un .svg,sino solo colocarlo con la medida que se requiera
+<img src="b.svg" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+fixed-bottom  el menu se mantiene flotante hacia abajo
+fixed-top el menu se mantiene flotante hacia arriba
+sticky-top donde coloques el menu se queda pegado
+UTILIDADES
+1.BORDER
+border generar un border
+border border-primary  colores
+rounded-(circle,0) desde sin radius hasta circular
+2.display
+cuando es un bloque ocupa todo el espacio de la fila 
+cuando es de linea ocupa solo lo que ocupa el contenido y cuando se agregar otro se coloca en la misma fila  
+d-inline  convertir de bloque a linea
+d-block convertir de linea a bloque
+responsive
+d-sm-none puede desaparecer algo en el tamaño que deseas
+3. Flex
+la clase siempre se colocará al div padre por ejemplo aqui solo le digo que del tamaño lg para adelante el menu estará arriba
+y desde pequeño hasta md estará abajo.
+fondo d-flex bg-dark text-light d-flex align-items-end align-items-lg-start">
+ flex-column flex-md-row   desde el más pequeño lo  convierte todo en una columna, cuando es mediano lo pasa a un fila con varias clumnas  
+ 4. Sizing 
+ todo equiivale a porcentaje
+ (w,h)-(25,50,75,100) tomar en cuenta que el 100 siempre colocar el tamaño de contenedor para que se pueda visualziar el 100%
+5. Font weight
+Poder dar estilos al texto
